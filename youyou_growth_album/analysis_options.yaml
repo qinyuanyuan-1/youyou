@@ -1,0 +1,7 @@
+include: package:flutter_lints/flutter.yaml
+
+# 代码检查规则：保持宽松，避免新手被一堆提示淹没
+linter:
+  rules:
+    avoid_print: false
+    prefer_const_constructors: false

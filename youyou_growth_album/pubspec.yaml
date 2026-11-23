@@ -1,0 +1,43 @@
+name: youyou_growth_album
+description: 优优成长相册 - 记录宝宝成长的智能相册 App
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.6
+  # 本地数据库：存宝宝档案、成长记录、技能、照片索引
+  sqflite: ^2.3.0
+  # 获取 App 私有目录，用来存照片副本和数据库
+  path_provider: ^2.1.1
+  path: ^1.8.3
+  # 日期格式化：中文日期、星期
+  intl: ^0.19.0
+  # 状态管理：页面之间共享宝宝信息和数据刷新
+  provider: ^6.1.1
+  # 读取手机系统相册
+  photo_manager: ^2.6.0
+  # 从相册/相机选一张图片（成长记录配图）
+  image_picker: ^1.0.7
+  # 人脸检测（Google ML Kit，端上离线运行，不上传照片）
+  google_mlkit_face_detection: ^0.10.0
+  image: ^4.1.3
+  # 生成唯一 ID
+  uuid: ^4.2.2
+  # 保存简单设置（样本人脸、相似度阈值等）
+  shared_preferences: ^2.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
